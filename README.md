@@ -1,6 +1,6 @@
 # ratio
 
-This is ratio, an application for University of Helsinki's _Ohjelmistotekniikka_ course.
+This is **ratio**, an application for University of Helsinki's _Ohjelmistotekniikka_ course.
 
 ## Exercises
 
