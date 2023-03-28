@@ -2,6 +2,10 @@
 
 This is **ratio**, an application for University of Helsinki's _Ohjelmistotekniikka_ course.
 
+## Documentation
+
+* [Software Requirements Specification](https://github.com/jobatabs/ratio/blob/main/doc/software_requirements_specification.md)
+
 ## Exercises
 
 ### Week 1
