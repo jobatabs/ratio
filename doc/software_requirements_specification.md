@@ -7,7 +7,9 @@ The user can enter either the desired amount of coffee to use, the desired volum
 
 ## UI Draft
 
-The application has a tabbed one-window model with two tabs.
+The application has a tabbed one-window model with two tabs:
+
+![](ui-draft.png)
 
 ## Planned functionality
 
