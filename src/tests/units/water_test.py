@@ -2,6 +2,7 @@ import unittest
 from units.water import Water
 from decimal import Decimal
 
+
 class TestWater(unittest.TestCase):
     def setUp(self):
         self.water = Water(1000)

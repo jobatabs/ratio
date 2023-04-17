@@ -3,6 +3,7 @@
 
 from tkinter import Tk
 
+
 def main():
     """Main function that starts the application.
     """
@@ -10,6 +11,7 @@ def main():
     window.title("ratio")
 
     window.mainloop()
+
 
 if __name__ == "__main__":
     main()

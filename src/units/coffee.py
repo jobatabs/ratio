@@ -4,6 +4,7 @@
 from decimal import Decimal, ROUND_HALF_UP
 from units.unit import Unit
 
+
 class Coffee(Unit):
     """A subclass of Unit that adds conversion to coffee spoons.
     """

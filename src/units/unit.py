@@ -2,9 +2,11 @@
 """
 from decimal import Decimal
 
+
 class Unit:
     """Base class for unit conversions
     """
+
     def __init__(self, mass_g: Decimal) -> None:
         self._mass_g = Decimal(mass_g)
 

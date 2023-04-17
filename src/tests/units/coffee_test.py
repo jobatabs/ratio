@@ -1,6 +1,7 @@
 import unittest
 from units.coffee import Coffee
 
+
 class TestCoffee(unittest.TestCase):
     def setUp(self):
         self.coffee = Coffee(12)
