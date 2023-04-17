@@ -26,3 +26,15 @@ def coverage_report(ctx):
     """Generates coverage html files.
     """
     ctx.run("coverage html", pty=True)
+
+@task
+def autopep(ctx):
+    """Runs autopep8 on source code.
+    """
+    ctx.run("autopep8 --in-place --recursive src")
+
+@task
+def lint(ctx):
+    """Runs pylint on source code.
+    """
+    ctx.run("pylint src")
