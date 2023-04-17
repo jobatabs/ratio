@@ -13,10 +13,10 @@ class Recipe:
             raise TypeError("Cannot init from both recipe types at once")
         if one_x:
             self._one_x = one_x
-            self._grams_litre = (Decimal(1000)/one_x).quantize(Decimal("10.00"))
+            self._grams_litre = Decimal(Decimal(1000)/one_x)
         if grams_litre:
             self._grams_litre = grams_litre
-            self._one_x = (Decimal(1000)/grams_litre).quantize(Decimal("10.00"))
+            self._one_x = Decimal(Decimal(1000)/grams_litre)
         if not one_x and not grams_litre:
             raise TypeError("A recipe must be passed")
 
@@ -37,4 +37,3 @@ class Recipe:
             Decimal: x g/1L.
         """
         return self._grams_litre
-
