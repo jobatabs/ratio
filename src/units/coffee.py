@@ -1,7 +1,7 @@
 """Defines Coffee, a child class of Unit that adds conversion to coffee spoons.
 """
 
-from decimal import Decimal, ROUND_HALF_UP
+from decimal import Decimal
 from units.unit import Unit
 
 
@@ -15,4 +15,4 @@ class Coffee(Unit):
         Returns:
             int: Amount of coffee spoons, rounded to nearest full spoon.
         """
-        return int((self._mass_g / 12).quantize(Decimal("0"), rounding=ROUND_HALF_UP))
+        return int((self._mass_g / 12).quantize(Decimal("0")))
