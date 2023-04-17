@@ -5,3 +5,10 @@
     - Water, which adds conversions between units of volume
     - Coffee, which adds conversion to coffee spoons
 - Tests added to check that unit conversions function as expected
+
+## Week 4
+
+- Added a class for Recipe, which provides brewing strength functions
+    - Can return the strength express either as 1 gram of coffee : X millilitres of water or X grams of coffee / 1L of water
+- Added calculations for recipe, water volume, or coffee beans amount
+    - 2/3 parameters are provided and the last one is calculated and returned
