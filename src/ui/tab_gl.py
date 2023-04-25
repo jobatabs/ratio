@@ -2,7 +2,7 @@ from tkinter import ttk
 from ui.entry_filter import RatioEntry, CoffeeEntry, WaterEntry
 from ui.selector import Selector
 
-class Tab_GL:
+class TabGL:
     def __init__(self, root):
         self._root = root
         self._frame = None
