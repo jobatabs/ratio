@@ -9,6 +9,16 @@ This is **ratio**, an application for University of Helsinki's _Ohjelmistoteknii
 * [Hours tracking](https://github.com/jobatabs/ratio/blob/main/doc/hours.md)
 * [Changelog](https://github.com/jobatabs/ratio/blob/main/doc/changelog.md)
 
+## Installation
+
+Install dependencies using ````poetry````:
+
+    poetry install
+
+Run program:
+
+    poetry run invoke start
+
 ## Command line functions
 
 ### Run tests
