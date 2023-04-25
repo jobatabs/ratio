@@ -12,3 +12,8 @@
     - Can return the strength express either as 1 gram of coffee : X millilitres of water or X grams of coffee / 1L of water
 - Added calculations for recipe, water volume, or coffee beans amount
     - 2/3 parameters are provided and the last one is calculated and returned
+
+## Week 5
+
+- Base UI draft: application can now be started graphically
+- UI does not yet have functionality attached to it
