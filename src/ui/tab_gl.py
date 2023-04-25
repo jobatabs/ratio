@@ -1,0 +1,40 @@
+from tkinter import ttk
+from ui.entry_filter import RatioEntry, CoffeeEntry, WaterEntry
+from ui.selector import Selector
+
+class Tab_GL:
+    def __init__(self, root):
+        self._root = root
+        self._frame = None
+        self.label = "g/L"
+        self._initialize()
+
+    @property
+    def frame(self):
+        return self._frame
+
+    def _initialize(self):
+        self._frame = ttk.Frame(master=self._root)
+
+        self._ratio_entry = RatioEntry(master=self._frame, width=6)
+
+        self._ratio_explainer = ttk.Label(master=self._frame, text="g / 1L")
+
+        self._coffee_entry = CoffeeEntry(self._frame)
+        self._water_entry = WaterEntry(self._frame)
+        self._coffee_selector = Selector(self._frame, ("g", "spoons"))
+        self._water_selector = Selector(self._frame, ("g", "ml"))
+
+        self._ratio_entry.grid(row=0, column=1)
+        self._ratio_explainer.grid(row=0, column=2)
+        self._coffee_entry.display(row=1, column=0)
+        self._water_entry.display(row=1, column=2)
+        self._coffee_selector.display(row=1, column=1)
+        self._water_selector.display(row=1, column=3)
+
+        self._frame.grid_rowconfigure(0, weight=1)
+        self._frame.grid_columnconfigure(0, weight=1)
+        self._frame.grid_rowconfigure(1, weight=1)
+        self._frame.grid_columnconfigure(1, weight=1)
+        self._frame.grid_columnconfigure(2, weight=1)
+        self._frame.grid_columnconfigure(3, weight=1)
