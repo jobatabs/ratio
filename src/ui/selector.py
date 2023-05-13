@@ -1,5 +1,6 @@
 from tkinter import ttk, constants, StringVar
 
+
 class Selector:
     def __init__(self, root, units: tuple):
         self._root = root
