@@ -4,6 +4,7 @@ This is **ratio**, an application for University of Helsinki's _Ohjelmistoteknii
 
 ## Documentation
 
+* [User guide](https://github.com/jobatabs/ratio/blob/main/doc/usage.md)
 * [Software Requirements Specification](https://github.com/jobatabs/ratio/blob/main/doc/software_requirements_specification.md)
 * [Architecture description](https://github.com/jobatabs/ratio/blob/main/doc/architecture.md)
 * [Hours tracking](https://github.com/jobatabs/ratio/blob/main/doc/hours.md)
@@ -20,6 +21,12 @@ Run program:
     poetry run invoke start
 
 ## Command line functions
+
+### Run application
+
+You can run the application using poetry and invoke:
+
+    poetry run invoke start
 
 ### Run tests
 

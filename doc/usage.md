@@ -1,4 +1,4 @@
-# Usage instructions
+# User guide
 
 ## Installation
 
