@@ -20,6 +20,7 @@
 
 ## Week 7 - release week
 
+- User guide is now available
 - UI StringVars can now be updated from opened file
 - Recipe can be saved and opened
 - Menubar now allows user to Save as..., Open... and Quit the program
