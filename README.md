@@ -7,6 +7,7 @@ This is **ratio**, an application for University of Helsinki's _Ohjelmistoteknii
 * [User guide](https://github.com/jobatabs/ratio/blob/main/doc/usage.md)
 * [Software Requirements Specification](https://github.com/jobatabs/ratio/blob/main/doc/software_requirements_specification.md)
 * [Architecture description](https://github.com/jobatabs/ratio/blob/main/doc/architecture.md)
+* [Testing document](https://github.com/jobatabs/ratio/blob/main/doc/testing.md)
 * [Hours tracking](https://github.com/jobatabs/ratio/blob/main/doc/hours.md)
 * [Changelog](https://github.com/jobatabs/ratio/blob/main/doc/changelog.md)
 
