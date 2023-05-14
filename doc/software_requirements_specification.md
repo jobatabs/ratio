@@ -19,4 +19,5 @@ The application has a tabbed one-window model with two tabs:
   - Calculate the strength of a recipe for a given amount of coffee and water - done ✅
 - The user has a selection of mass and volume units to use for coffee or water variable - done✅
 - Desired strength can be entered in units of g/L or 1:X - done ✅
-- The user can save recipes and note down the beans used for the recipe and other potentially relevant information such as grind size and taste notes
+- The user can save and open recipes - done ✅
+  - User can also note down the beans used for the recipe and other potentially relevant information such as grind size and taste notes

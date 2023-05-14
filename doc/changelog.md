@@ -17,3 +17,9 @@
 
 - Base UI draft: application can now be started graphically
 - UI does not yet have functionality attached to it
+
+## Week 7 - release week
+
+- UI StringVars can now be updated from opened file
+- Recipe can be saved and opened
+- Menubar now allows user to Save as..., Open... and Quit the program

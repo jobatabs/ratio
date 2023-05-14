@@ -8,4 +8,6 @@
 | 17.4. | 4    | Add class Recipe, add module calculations, add tests for both |
 | 17.4. | 1    | Add architecture description doc |
 | 25.4. | 3    | UI draft written, sequence diagram made |
-| Total   | 12  |
+| 13.5. | 2    | File I/O, UI StringVars, menubar |
+| 14.5. | 1    | Docstring, I/O unit testing |
+| Total   | 15  |
