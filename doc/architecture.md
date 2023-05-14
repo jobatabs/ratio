@@ -74,3 +74,14 @@ Here is an example sequence of a user first calculating water for given amount o
 ```
 
 As User inputs values, handlers are called to determine which parameters should be "locked in" per user input, and which parameter should be dynamically calculated.
+
+## Data storage
+
+The application can write and read recipe data into .ratio files, which are UTF-8 encoded text files containing recipe information, separated by newlines.
+
+## Current weaknesses/faults
+
+- In its current state the UI does not call upon services/calculations.py to actually calculate the recipe values dynamically.
+- Coffee and water entry fields do not provide input validation.
+- UI classes have inappropriate intimacy with each other.
+- Recipe StringVar is not updated on tab shifts to reflect differing recipe representation formats.
