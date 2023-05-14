@@ -1,4 +1,5 @@
 from tkinter import ttk, StringVar, Tk
+from decimal import Decimal, InvalidOperation
 
 
 class RatioEntry(ttk.Entry):
@@ -15,11 +16,12 @@ class RatioEntry(ttk.Entry):
         try:
             if new_value.strip() == "":
                 return True
-            value = int(new_value)
-            if value < 1 or value > 100:
+            value = Decimal(new_value)
+            if value < 1 or value > 200:
                 self.disallow()
                 return False
-        except ValueError:
+            return True
+        except (InvalidOperation, ValueError):
             self.disallow()
             return False
 
