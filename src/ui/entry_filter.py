@@ -1,4 +1,4 @@
-from tkinter import ttk
+from tkinter import ttk, StringVar, Tk
 
 
 class RatioEntry(ttk.Entry):
@@ -24,37 +24,29 @@ class RatioEntry(ttk.Entry):
             return False
 
 
-class CoffeeEntry:
-    def __init__(self, root, value):
+class LabelEntry:
+
+    def __init__(self, root: Tk, value: StringVar, label: str):
+        """Constructs a LabelEntry object.
+
+        Args:
+            root (Tk): A Tk object to attach to.
+            value (StringVar): A StringVar to attach the entry field to.
+            label (str): The label of the entry field.
+        """
         self._root = root
         self._frame = None
-        self._initialize(value)
+        self.__label = label
+        self.__value = value
+        self._initialize()
 
     def display(self, **options):
         self._frame.grid(**options)
 
-    def _initialize(self, value):
+    def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
         self._field = ttk.Entry(
-            master=self._frame, width=6, textvariable=value)
-        self._text = ttk.Label(master=self._frame, text="Coffee")
-        self._field.grid()
-        self._text.grid()
-
-
-class WaterEntry:
-    def __init__(self, root, value):
-        self._root = root
-        self._frame = None
-        self._initialize(value)
-
-    def display(self, **options):
-        self._frame.grid(**options)
-
-    def _initialize(self, value):
-        self._frame = ttk.Frame(master=self._root)
-        self._field = ttk.Entry(
-            master=self._frame, width=6, textvariable=value)
-        self._text = ttk.Label(master=self._frame, text="Water")
+            master=self._frame, width=6, textvariable=self.__value)
+        self._text = ttk.Label(master=self._frame, text=self.__label)
         self._field.grid()
         self._text.grid()

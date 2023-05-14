@@ -1,5 +1,5 @@
 from tkinter import ttk, Tk, StringVar
-from ui.entry_filter import RatioEntry, CoffeeEntry, WaterEntry
+from ui.entry_filter import RatioEntry, LabelEntry
 from ui.selector import Selector
 
 
@@ -25,8 +25,8 @@ class TabGL:
 
         self._ratio_explainer = ttk.Label(master=self._frame, text="g / 1L")
 
-        self._coffee_entry = CoffeeEntry(self._frame, self._coffee_var)
-        self._water_entry = WaterEntry(self._frame, self._water_var)
+        self._coffee_entry = LabelEntry(self._frame, self._coffee_var, "Coffee")
+        self._water_entry = LabelEntry(self._frame, self._water_var, "Water")
         self._coffee_selector = Selector(self._frame, ("g", "spoons"))
         self._water_selector = Selector(self._frame, ("g", "ml"))
 
