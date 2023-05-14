@@ -23,3 +23,4 @@
 - UI StringVars can now be updated from opened file
 - Recipe can be saved and opened
 - Menubar now allows user to Save as..., Open... and Quit the program
+- Recipe entry field now disallows non-Decimal type entry
