@@ -39,7 +39,8 @@ class CoffeeEntry:
 
     def _initialize(self, value):
         self._frame = ttk.Frame(master=self._root)
-        self._field = ttk.Entry(master=self._frame, width=6, textvariable=value)
+        self._field = ttk.Entry(
+            master=self._frame, width=6, textvariable=value)
         self._text = ttk.Label(master=self._frame, text="Coffee")
         self._field.grid()
         self._text.grid()
@@ -56,7 +57,8 @@ class WaterEntry:
 
     def _initialize(self, value):
         self._frame = ttk.Frame(master=self._root)
-        self._field = ttk.Entry(master=self._frame, width=6, textvariable=value)
+        self._field = ttk.Entry(
+            master=self._frame, width=6, textvariable=value)
         self._text = ttk.Label(master=self._frame, text="Water")
         self._field.grid()
         self._text.grid()

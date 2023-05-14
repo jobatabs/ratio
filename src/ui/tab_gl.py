@@ -20,7 +20,8 @@ class TabGL:
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
 
-        self._ratio_entry = RatioEntry(master=self._frame, width=6, value=self._recipe_var)
+        self._ratio_entry = RatioEntry(
+            master=self._frame, width=6, value=self._recipe_var)
 
         self._ratio_explainer = ttk.Label(master=self._frame, text="g / 1L")
 

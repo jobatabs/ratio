@@ -23,7 +23,8 @@ class Tab1X:
         self._ratio_explainer = ttk.Label(
             master=self._frame, text="1 :", anchor=constants.W)
 
-        self._ratio_entry = RatioEntry(master=self._frame, width=6, value=self._recipe_var)
+        self._ratio_entry = RatioEntry(
+            master=self._frame, width=6, value=self._recipe_var)
 
         self._coffee_entry = CoffeeEntry(self._frame, self._coffee_var)
         self._water_entry = WaterEntry(self._frame, self._water_var)

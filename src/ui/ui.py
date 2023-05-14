@@ -21,8 +21,10 @@ class UI:
         self._recipe_var.set("60")
 
         self._tabs = ttk.Notebook(root)
-        self._tab1 = Tab1X(self._tabs, self._coffee_var, self._water_var, self._recipe_var)
-        self._tab2 = TabGL(self._tabs, self._coffee_var, self._water_var, self._recipe_var)
+        self._tab1 = Tab1X(self._tabs, self._coffee_var,
+                           self._water_var, self._recipe_var)
+        self._tab2 = TabGL(self._tabs, self._coffee_var,
+                           self._water_var, self._recipe_var)
 
         self._menubar = Menu(self._root)
         self._root.config(menu=self._menubar)
