@@ -11,4 +11,5 @@
 | 13.5. | 2    | File I/O, UI StringVars, menubar |
 | 14.5. | 1    | Docstring, I/O unit testing |
 | 14.5. | 1    | More docstring, entry field updates, class refactoring |
-| Total   | 16  |
+| 14.5. | 1    | Documentation |
+| Total   | 17 |
