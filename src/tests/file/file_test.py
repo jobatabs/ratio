@@ -20,8 +20,20 @@ class TestFile(unittest.TestCase):
         self.assertEqual(water.millilitres, self._water.millilitres)
         self.assertEqual(recipe.one_x, self._recipe.one_x)
 
+    def test_nonefile(self):
+        self.assertFalse(write_recipe(
+            None, self._coffee, self._water, self._recipe))
+        self.assertFalse(read_recipe(None))
+
+    def test_notreadable(self):
+        open("ratio.notwritable", "a", encoding="UTF-8").close()
+        with open("ratio.notwritable", "r", encoding="UTF-8") as file:
+            self.assertFalse(write_recipe(
+                file, self._coffee, self._water, self._recipe))
+
     def tearDown(self):
         try:
             os.remove("ratio.test")
+            os.remove("ratio.notwritable")
         except OSError as error:
             print(error)
