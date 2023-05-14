@@ -1,8 +1,10 @@
-import unittest, os
+import unittest
+import os
 from file.file import write_recipe, read_recipe
 from units.coffee import Coffee
 from units.water import Water
 from units.recipe import Recipe
+
 
 class TestFile(unittest.TestCase):
     def setUp(self):
