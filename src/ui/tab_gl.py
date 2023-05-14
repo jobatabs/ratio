@@ -1,10 +1,10 @@
-from tkinter import ttk
+from tkinter import ttk, Tk, StringVar
 from ui.entry_filter import RatioEntry, CoffeeEntry, WaterEntry
 from ui.selector import Selector
 
 
 class TabGL:
-    def __init__(self, root, coffee_var, water_var, recipe_var):
+    def __init__(self, root: Tk, coffee_var: StringVar, water_var: StringVar, recipe_var: StringVar):
         self._root = root
         self._frame = None
         self._coffee_var = coffee_var

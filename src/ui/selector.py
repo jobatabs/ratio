@@ -1,8 +1,8 @@
-from tkinter import ttk, constants, StringVar
+from tkinter import ttk, constants, StringVar, Tk
 
 
 class Selector:
-    def __init__(self, root, units: tuple):
+    def __init__(self, root: Tk, units: tuple):
         self._root = root
         self._frame = None
         self._selection = StringVar()
