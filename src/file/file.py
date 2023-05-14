@@ -7,9 +7,13 @@ from units.recipe import Recipe
 
 def write_recipe(file: io.TextIOWrapper, coffee: Coffee, water: Water, recipe: Recipe) -> bool:
     if file is not None:
-        file.write(f"{coffee.grams}\n")
-        file.write(f"{water.grams}\n")
-        file.write(f"{recipe.grams_litre}\n")
+        try:
+            file.write(f"{coffee.grams}\n")
+            file.write(f"{water.grams}\n")
+            file.write(f"{recipe.grams_litre}\n")
+            file.close()
+        except io.UnsupportedOperation:
+            return False
         return True
     return False
 
@@ -17,6 +21,7 @@ def write_recipe(file: io.TextIOWrapper, coffee: Coffee, water: Water, recipe: R
 def read_recipe(file: io.TextIOWrapper) -> tuple[Coffee, Water, Recipe]:
     if file is not None:
         lines = file.readlines()
+        file.close()
         coffee = Coffee(Decimal(lines[0]))
         water = Water(Decimal(lines[1]))
         recipe = Recipe(grams_litre=Decimal(lines[2]))
