@@ -4,7 +4,7 @@
 
 ![Package diagram](./img/packaging.png)
 
-Package _ui/_ provides UI functions, _services/_ provides core program logic, _fs/_ provides filesystem interaction, and _units/_ provides unit conversions and classes.
+Package _ui/_ provides UI functions, _services/_ provides core program logic, _file/_ provides filesystem interaction, and _units/_ provides unit conversions and classes.
 
 ## Classes
 
