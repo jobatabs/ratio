@@ -1,6 +1,6 @@
 import unittest
 from decimal import Decimal
-from calculations import calculate_coffee, calculate_recipe, calculate_water
+from services.calculations import calculate_coffee, calculate_recipe, calculate_water
 from units.coffee import Coffee
 from units.water import Water
 from units.recipe import Recipe
