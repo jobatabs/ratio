@@ -34,7 +34,7 @@ class UI:
         self._file_menu.add_command(
             label="Save as...", command=self._save_recipe)
         self._file_menu.add_command(label="Open...", command=self._open_recipe)
-        self._file_menu.add_command(label="Exit", command=self._root.destroy)
+        self._file_menu.add_command(label="Quit", command=self._root.destroy)
         self._menubar.add_cascade(
             label="File", menu=self._file_menu, underline=0)
         self._tabs.pack(fill=constants.BOTH, expand=True)
