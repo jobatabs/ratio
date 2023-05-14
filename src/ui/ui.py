@@ -1,3 +1,6 @@
+"""ui.py defines class UI, which provides all UI functions to the program.
+"""
+
 from tkinter import Tk, ttk, constants, Menu, filedialog, StringVar
 from decimal import Decimal
 from ui.tab_1x import Tab1X
@@ -9,7 +12,15 @@ from units.recipe import Recipe
 
 
 class UI:
+    """UI provides all UI functions and handlers to the program.
+    """
+
     def __init__(self, root: Tk):
+        """Sets up variables, Notebook tabs and the menubar.
+
+        Args:
+            root (Tk): A Tk object that the UI is attached to.
+        """
         self._root = root
 
         self._coffee_var = StringVar()
@@ -31,6 +42,8 @@ class UI:
         self._file_menu = Menu(self._menubar)
 
     def start(self):
+        """Adds commands to the menubar and then packs tabs into main Notebook to prepare for Tk.mainloop().
+        """
         self._file_menu.add_command(
             label="Save as...", command=self._save_recipe)
         self._file_menu.add_command(label="Open...", command=self._open_recipe)
@@ -42,6 +55,8 @@ class UI:
         self._tabs.add(self._tab2.frame, text=self._tab2.label)
 
     def _save_recipe(self):
+        """Handles the menubar's Save as... command.
+        """
         file = filedialog.asksaveasfile(defaultextension=".ratio", filetypes=[
                                         ("Recipe files", "*.ratio")])
 
@@ -52,6 +67,8 @@ class UI:
         write_recipe(file, coffee, water, recipe)
 
     def _open_recipe(self):
+        """Handles the menubar's Open... command.
+        """
         file = filedialog.askopenfile(multiple=False, filetypes=[
                                       ("Recipe files", "*.ratio")])
 

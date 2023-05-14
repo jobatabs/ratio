@@ -1,10 +1,24 @@
+"""tab_1x.py provides the 1 : X tab UI of the application.
+"""
 from tkinter import ttk, constants, Tk, StringVar
 from ui.entry_filter import RatioEntry, LabelEntry
 from ui.selector import Selector
 
 
 class Tab1X:
-    def __init__(self, root: Tk, coffee_var: StringVar, water_var: StringVar, recipe_var: StringVar):
+    """Defines a tab for the UI that takes a Recipe in the form of 1 : X.
+    """
+
+    def __init__(self, root: Tk, coffee_var: StringVar,
+                 water_var: StringVar, recipe_var: StringVar):
+        """Constructs a Tab1X object.
+
+        Args:
+            root (Tk): A Tk object to attach to.
+            coffee_var (StringVar): Amount of coffee, populated into the coffee entry field.
+            water_var (StringVar): Amount of water, populated into the water entry field.
+            recipe_var (StringVar): The recipe, populated into the recipe entry field.
+        """
         self._root = root
         self._frame = None
         self._coffee_var = coffee_var
@@ -15,9 +29,13 @@ class Tab1X:
 
     @property
     def frame(self):
+        """Getter for the tab's Tk frame.
+        """
         return self._frame
 
     def _initialize(self):
+        """Configures the tab for display.
+        """
         self._frame = ttk.Frame(master=self._root)
 
         self._ratio_explainer = ttk.Label(
