@@ -1,10 +1,6 @@
 from tkinter import ttk
 
 
-class EntryFilter(ttk.Entry):
-    pass
-
-
 class RatioEntry(ttk.Entry):
     def __init__(self, value, *args, **kwargs):
         ttk.Entry.__init__(self, textvariable=value, *args, **kwargs)
