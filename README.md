@@ -21,6 +21,10 @@ Run program:
 
     poetry run invoke start
 
+Or on Windows:
+
+    python3 src\index.py
+
 ## Command line functions
 
 ### Run application
